@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <title>BMR Calculator</title>
+</head>
+<body class="bg-yellow-800">
+    <nav class="bg-transparent p-4 flex align-middle justify-around h-20 items-center">
+        <span class="text-orange-500 text-xl">GymKhana</span>          
+        <ul id="navLinks" class="hidden lg:flex justify-center items-center gap-12 text-white text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="training.html">Training</a></li>
+        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+        </ul>
+        <button id="navToggle" class="text-white lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- code for mobile menu of navlinks  -->
+
+    <ul id="mobilenavLinks" class=" hidden flex flex-col bg-transparent backdrop-blur-md justify-center items-center gap-12 text-slate-800 font-semibold text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="training.html">Training</a></li>
+        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+    </ul>
+
+    <div class="bg-blue-950 flex justify-center text-center items-center h-52 text-white text-2xl md:text-4xl font-serif font-bold md:tracking-[0.40em] px-4">
+        <p class="bg-blue-950 flex justify-center text-center items-center text-white text-2xl md:text-4xl font-serif font-bold md:tracking-[0.40em]">BMR Calculator</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 py-5 px-2">
+        <div class="bg-red-400 flex justify-center items-center flex-col">
+            <p class="text-center text-3xl text-orange-700 py-4 font-extrabold">WHAT IS BMR?</p>
+            <p class="text-center  text-xl">BMR, or Basal Metabolic Rate, represents the number of calories your body needs to perform basic functions while at rest. <br> These functions include </p>
+            <ul class="p-4  mt-6 text-xl">
+                <li><strong>i- </strong>breathing, </li>
+                <li><strong>ii- </strong>circulating blood</li>
+                <li><strong>iii- </strong>maintaining body temperature</li>
+                <li><strong>iv- </strong>metabolism</li>
+                <li><strong>v- </strong>cell function, growth, and repair  </li>
+            </ul>
+
+        </div>
+
+
+        <div class=" bg-red-400 p-6 rounded-md shadow-md">
+            <div class="mb-4">
+                <label for="gender" class="block font-semibold mb-1">Gender</label>
+                <select id="gender" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="age" class="block font-semibold mb-1">Age (years)</label>
+                <input type="number" id="age" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500" placeholder="Enter your age">
+            </div>
+            <div class="mb-4">
+                <label for="weight" class="block font-semibold mb-1">Weight (kg)</label>
+                <input type="number" id="weight" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500" placeholder="Enter weight in kg">
+            </div>
+            <div class="mb-4">
+                <label for="height" class="block font-semibold mb-1">Height (cm)</label>
+                <input type="number" id="height" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500" placeholder="Enter height in centimeters">
+            </div>
+            <button id="calculateBtn" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-300">Calculate BMR</button>
+            <div id="result" class="mt-4 text-center"></div>
+        </div>
+    </div>
+
+    <!-- code for stay informed and get fit section  -->
+
+    <div class="bg-black py-20 px-12 md:px-16 grid items-center gap-12">
+        <div class="leading-10 flex flex-col gap-8 justify-between">
+            <p class="text-center text-white text-3xl font-bold font-serif">STAY INFORMED & GET FIT</p>
+            <p class="text-center text-white text-xl font-sans font-medium">Get the latest World Gym news, fitness tips, & exclusive offers delivered straight to your inbox.</p>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+            
+            <input class=" w-full text-center font-bold border-b-4 border-orange-400 rounded-lg py-3"required type="text" name="fname" id="fnmae" placeholder="First Name">
+            
+            
+            <input class="w-full text-center font-bold border-b-4 border-green-500 rounded-lg py-3" required type="text" name="lname" id="lname" placeholder="Last Name">
+            
+            
+            <input class="w-full text-center font-black border-b-4 border-pink-700 rounded-lg py-3" required type="email" name="email" id="email" placeholder="Email Address" >
+            
+            <input class="w-full h-12 bg-red-500 rounded-xl text-center text-white font-semibold hover:bg-opacity-65 hover:underline hover:outline-double outline-4 outline-amber-500" type="submit" value="SUBMIT">
+        </div>
+        <p class="text-center text-white font-serif">By clicking SUBMIT below, you. agree to the <a class="underline text-indigo-700" href=""> Privacy Policy </a> and authorize World Gym International, our affiliates, as well as our marketing and/or service providers to send you non-emergency, automated text messages at the number you entered above. Consent is not a condition of purchase. Reply STOP to opt-out of text messaging. Standard rates may apply.</p>
+        <p class="text-2xl text-white font-semibold p-6 text-center">FOLLOW US ON SOCIAL MEDIA FOR THE LATEST GYMNATION NEWS, UPDATES AND HILARIOUS GYM VIDEOS!</p>
+        <div class="text-white cursor-pointer text-3xl flex justify-center items gap-8">
+            <a href="https://www.facebook.com/276115732252325" target="_blank"><i class="fa-brands fa-facebook bg-black hover:text-yellow-400"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin bg-black hover:text-yellow-400"></i></a>
+            <a href="https://x.com/Waleed___S?t=PFLDwuxmnVNAcUvqRrowAQ&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter bg-black hover:text-yellow-400"></i></a>
+            <a href="https://waleed-s-portfolio.netlify.app" target="_blank"><i class="fa-solid fa-link bg-black hover:text-yellow-400"></i></a>
+        </div>
+    </div>
+    
+    <!-- code for footer  -->
+    <div class="bg-gray-900 grid md:grid md:gap-12 lg:gap-0 lg:flex justify-between items-center pb-13 pt-4 px-8">
+        <div class="px-3 grid grid-cols-2 gap-6 py-6 md:py-0 md:pb-0 md:gap-0 items-center md:block">
+
+            <div class="text-white text-center text-sm">&commat;2024 All Rights Reserved</div>
+            <div>
+                <ul class="flex gap-4 justify-center items-center text-white">
+                    <span class="text-white"> |</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Terms & conditions</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Site Map</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Privacy Policy</a></li><span class="text-white">|</span>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-white p-4 text-base hidden md:block">
+            <p class="">Every World Gym is independently owned and operated.</p>
+            <p><a class="underline text-white hover:text-blue-700" href="">Click here</a> to learn more about becoming a World Gym owner.</p>
+        </div>
+    </div>
+
+    <script>
+        const calculateBtn = document.getElementById('calculateBtn');
+        const resultDiv = document.getElementById('result');
+
+        calculateBtn.addEventListener('click', () => {
+            const gender = document.getElementById('gender').value;
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+
+            if (isNaN(age) || isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                resultDiv.innerHTML = '<p class="text-red-600">Please enter valid age, weight, and height values.</p>';
+                return;
+            }
+
+            const bmr = calculateBMR(gender, age, weight, height);
+            resultDiv.innerHTML = `<p class="text-green-600 font-semibold">Your BMR: ${bmr.toFixed(2)} calories per day</p>`;
+        });
+
+        function calculateBMR(gender, age, weight, height) {
+            let bmr;
+            if (gender === 'female') {
+                bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+            } else {
+                bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+            }
+            return bmr;
+        }
+
+        let num=0
+    document.getElementById("navToggle").addEventListener("click",()=>{
+        num+=1;
+       let mobilenavLinks= document.getElementById("mobilenavLinks").classList.toggle("hidden");
+       let span=document.getElementById("span").classList.add("hidden")
+        // if(mobilenavLinks.classList=="hidden"){
+        //     document.getElementById("span").classList.add("block")
+        // }
+        // else{
+        //     document.getElementById("span").classList.add("hidden")
+        // }
+    })
+    </script>
+</body>
+</html>

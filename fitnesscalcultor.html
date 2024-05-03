@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness-Calcultor</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-orange-600">
+    <nav class="bg-black p-4 flex align-middle justify-around h-20 items-center">
+        <span class="text-orange-500 text-xl">GymKhana</span>          
+        <ul id="navLinks" class="hidden lg:flex justify-center items-center gap-12 text-white text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="training.html">Training</a></li>
+        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+        </ul>
+        <button id="navToggle" class="text-white lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- code for mobile menu of navlinks  -->
+
+    <ul id="mobilenavLinks" class=" hidden flex flex-col bg-transparent backdrop-blur-md justify-center items-center gap-12 text-slate-800 font-semibold text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="training.html">Training</a></li>
+        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+    </ul>
+    <div class="bg-blue-950 flex justify-center text-center items-center h-52 text-white text-2xl md:text-4xl font-serif font-bold md:tracking-[0.40em] px-4">
+        <p class="bg-blue-950 flex justify-center text-center items-center text-white text-2xl md:text-4xl font-serif font-bold md:tracking-[0.40em]">FITNESS CALCULATORS</p>
+    </div>
+    <div class="bg-white text-black flex justify-center items-center gap-5 flex-col py-3 px-12">
+        <p class="text-3xl font-bold p-2">FITNESS CALCULATORS</p>
+        <p>The GymKhana fitness calculators help make your life easy! Whether you want to calculate <strong> BMI </strong>,use the <strong>calorie calculator,</strong> workout your <strong> BMR </strong> using our BMR calculator, or even figure out how much you should be lifting with our <strong>1 rep max</strong>  calculator - the Gymkhana fitness calculators have the answer.
+        </p>
+        <p class="pb-6">Find and click on the relevant fitness calculator below, enter your details and start using our fitness calculators to put your fitness first TODAY!</p>
+    </div>
+
+
+    <!-- code for Calculators lists  -->
+
+    <div class="grid px-8 gap-x-3 gap-y-6 lg:grid-cols-3 md:grid-cols-2 py-6 ">
+        <a href="bmicalculator.html"><div class="a border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://gymnation.com/media/ii5fkt13/bmi2.jpg" alt="bmi calculator" srcset="">
+            <p class="z bg-blue-900 py-2 w-full text-center text-white px-4">Body Mass index Calculator</p>
+        </div></a>
+        <a href="bmrcalculator.html"><div class="b border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://gymnation.com/media/v45j0r3o/food-journal.jpg" alt="bmi calculator" srcset="">
+            <p class="ii bg-blue-900 py-2 w-full text-center text-white  px-4">BMR Calculator</p>
+        </div></a>
+        <a href="bfatcalculator.html"><div class="c border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://gymnation.com/media/ajkddbid/bmr-calculator.jpg" alt="bmi calculator" srcset="">
+            <p class="iii bg-blue-900 py-2 w-full text-center text-white  px-4">Body Fat Calculator</p>
+        </div></a>
+        <a href=""><div class="d border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="iv bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="e border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="v bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="f border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="vi bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="g border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="vii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="h border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="viii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="i border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="ix bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="j border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="x bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="k border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xi bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="l border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="m border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xiii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="n border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xiv bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="o border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xv bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="p border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xvi bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="q border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xvii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+        <a href=""><div class="r border-4 border-blue-900 flex hover:border-yellow-400 flex-col justify-center items-center">
+            <img src="https://www.eurokidsindia.com/blog/wp-content/webp-express/webp-images/uploads/2023/10/what-is-measurement.jpg.webp" alt="bmi calculator" srcset="">
+            <p class="xviii bg-blue-900 py-2 w-full text-center text-white  px-4">BMI Calculator</p>
+        </div></a>
+    </div>
+
+    <!-- code for stay informed and get fit section  -->
+
+    <div class="bg-black py-20 px-12 md:px-16 grid items-center gap-12">
+        <div class="leading-10 flex flex-col gap-8 justify-between">
+            <p class="text-center text-white text-3xl font-bold font-serif">STAY INFORMED & GET FIT</p>
+            <p class="text-center text-white text-xl font-sans font-medium">Get the latest World Gym news, fitness tips, & exclusive offers delivered straight to your inbox.</p>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+            
+            <input class=" w-full text-center font-bold border-b-4 border-orange-400 rounded-lg py-3"required type="text" name="fname" id="fnmae" placeholder="First Name">
+            
+            
+            <input class="w-full text-center font-bold border-b-4 border-green-500 rounded-lg py-3" required type="text" name="lname" id="lname" placeholder="Last Name">
+            
+            
+            <input class="w-full text-center font-black border-b-4 border-pink-700 rounded-lg py-3" required type="email" name="email" id="email" placeholder="Email Address" >
+            
+            <input class="w-full h-12 bg-red-500 rounded-xl text-center text-white font-semibold hover:bg-opacity-65 hover:underline hover:outline-double outline-4 outline-amber-500" type="submit" value="SUBMIT">
+        </div>
+        <p class="text-center text-white font-serif">By clicking SUBMIT below, you. agree to the <a class="underline text-indigo-700" href=""> Privacy Policy </a> and authorize World Gym International, our affiliates, as well as our marketing and/or service providers to send you non-emergency, automated text messages at the number you entered above. Consent is not a condition of purchase. Reply STOP to opt-out of text messaging. Standard rates may apply.</p>
+        <p class="text-2xl text-white font-semibold p-6 text-center">FOLLOW US ON SOCIAL MEDIA FOR THE LATEST GYMNATION NEWS, UPDATES AND HILARIOUS GYM VIDEOS!</p>
+        <div class="text-white cursor-pointer text-3xl flex justify-center items gap-8">
+            <a href="https://www.facebook.com/276115732252325" target="_blank"><i class="fa-brands fa-facebook bg-black hover:text-yellow-400"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin bg-black hover:text-yellow-400"></i></a>
+            <a href="https://x.com/Waleed___S?t=PFLDwuxmnVNAcUvqRrowAQ&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter bg-black hover:text-yellow-400"></i></a>
+            <a href="https://waleed-s-portfolio.netlify.app" target="_blank"><i class="fa-solid fa-link bg-black hover:text-yellow-400"></i></a>
+        </div>
+    </div>
+    
+    <!-- code for footer  -->
+    <div class="bg-gray-900 grid md:grid md:gap-12 lg:gap-0 lg:flex justify-between items-center pb-13 pt-4 px-8">
+        <div class="px-3 grid grid-cols-2 gap-6 py-6 md:py-0 md:pb-0 md:gap-0 items-center md:block">
+
+            <div class="text-white text-center text-sm">&commat;2024 All Rights Reserved</div>
+            <div>
+                <ul class="flex gap-4 justify-center items-center text-white">
+                    <span class="text-white"> |</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Terms & conditions</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Site Map</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Privacy Policy</a></li><span class="text-white">|</span>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-white p-4 text-base hidden md:block">
+            <p class="">Every World Gym is independently owned and operated.</p>
+            <p><a class="underline text-white hover:text-blue-700" href="">Click here</a> to learn more about becoming a World Gym owner.</p>
+        </div>
+    </div>
+
+    <script>
+    let num=0
+    document.getElementById("navToggle").addEventListener("click",()=>{
+        num+=1;
+       let mobilenavLinks= document.getElementById("mobilenavLinks").classList.toggle("hidden");
+       let span=document.getElementById("span").classList.add("hidden")
+        // if(mobilenavLinks.classList=="hidden"){
+        //     document.getElementById("span").classList.add("block")
+        // }
+        // else{
+        //     document.getElementById("span").classList.add("hidden")
+        // }
+    })
+
+
+    document.querySelector(".a").addEventListener("mouseover",()=>{
+        document.querySelector(".z").style.backgroundColor="yellow";
+    })
+    document.querySelector(".a").addEventListener("mouseleave",()=>{
+        document.querySelector(".z").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".b").addEventListener("mouseover",()=>{
+        document.querySelector(".ii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".b").addEventListener("mouseleave",()=>{
+        document.querySelector(".ii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".c").addEventListener("mouseover",()=>{
+        document.querySelector(".iii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".c").addEventListener("mouseleave",()=>{
+        document.querySelector(".iii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".d").addEventListener("mouseover",()=>{
+        document.querySelector(".iv").style.backgroundColor="yellow";
+    })
+    document.querySelector(".d").addEventListener("mouseleave",()=>{
+        document.querySelector(".iv").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".e").addEventListener("mouseover",()=>{
+        document.querySelector(".v").style.backgroundColor="yellow";
+    })
+    document.querySelector(".e").addEventListener("mouseleave",()=>{
+        document.querySelector(".v").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".f").addEventListener("mouseover",()=>{
+        document.querySelector(".vi").style.backgroundColor="yellow";
+    })
+    document.querySelector(".f").addEventListener("mouseleave",()=>{
+        document.querySelector(".vi").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".g").addEventListener("mouseover",()=>{
+        document.querySelector(".vii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".g").addEventListener("mouseleave",()=>{
+        document.querySelector(".vii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".h").addEventListener("mouseover",()=>{
+        document.querySelector(".viii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".h").addEventListener("mouseleave",()=>{
+        document.querySelector(".viii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".i").addEventListener("mouseover",()=>{
+        document.querySelector(".ix").style.backgroundColor="yellow";
+    })
+    document.querySelector(".i").addEventListener("mouseleave",()=>{
+        document.querySelector(".ix").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".j").addEventListener("mouseover",()=>{
+        document.querySelector(".x").style.backgroundColor="yellow";
+    })
+    document.querySelector(".j").addEventListener("mouseleave",()=>{
+        document.querySelector(".x").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".k").addEventListener("mouseover",()=>{
+        document.querySelector(".xi").style.backgroundColor="yellow";
+    })
+    document.querySelector(".k").addEventListener("mouseleave",()=>{
+        document.querySelector(".xi").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".l").addEventListener("mouseover",()=>{
+        document.querySelector(".xii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".l").addEventListener("mouseleave",()=>{
+        document.querySelector(".xii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".m").addEventListener("mouseover",()=>{
+        document.querySelector(".xiii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".m").addEventListener("mouseleave",()=>{
+        document.querySelector(".xiii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".n").addEventListener("mouseover",()=>{
+        document.querySelector(".xiv").style.backgroundColor="yellow";
+    })
+    document.querySelector(".n").addEventListener("mouseleave",()=>{
+        document.querySelector(".xiv").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".o").addEventListener("mouseover",()=>{
+        document.querySelector(".xv").style.backgroundColor="yellow";
+    })
+    document.querySelector(".o").addEventListener("mouseleave",()=>{
+        document.querySelector(".xv").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".p").addEventListener("mouseover",()=>{
+        document.querySelector(".xvi").style.backgroundColor="yellow";
+    })
+    document.querySelector(".p").addEventListener("mouseleave",()=>{
+        document.querySelector(".xvi").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+    document.querySelector(".q").addEventListener("mouseover",()=>{
+        document.querySelector(".xvii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".q").addEventListener("mouseleave",()=>{
+        document.querySelector(".xvii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+    document.querySelector(".r").addEventListener("mouseover",()=>{
+        document.querySelector(".xviii").style.backgroundColor="yellow";
+    })
+    document.querySelector(".r").addEventListener("mouseleave",()=>{
+        document.querySelector(".xviii").style.backgroundColor="rgb(3, 3, 163)";
+    })
+
+</script>
+</body>
+</html>

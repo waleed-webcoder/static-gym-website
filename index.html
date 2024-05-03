@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome on Gymkhana</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+        } 
+        .homepage{
+            background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*O_XcRYR-6Oa-7drDdOjVog.png);
+            /* background-image: url(https://thumbs.wbm.im/pw/small/058384381cd339c22219b2804699ba2c.avif); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(100%);
+            height: 630px;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body class="">
+    <div class="homepage">
+        <nav class="bg-transparent backdrop-blur-md  p-4 flex align-middle justify-around h-20 items-center">
+            <span class="text-orange-500 text-xl">GymKhana</span>          
+            <ul id="navLinks" class="hidden lg:flex justify-center items-center gap-12 text-white text-lg font-sans">
+            <li class="hover:underline"><a href="index.html">Home</a></li>
+            <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+            <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+            <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+            <li class="hover:underline"><a href="training.html">Training</a></li>
+            <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+            </ul>
+            <button id="navToggle" class="text-white lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- code for mobile menu of navlinks  -->
+
+        <ul id="mobilenavLinks" class=" hidden flex flex-col bg-transparent p-4 backdrop-blur-md justify-center items-center gap-12 text-white font-semibold text-lg font-sans">
+            <li class="hover:underline"><a href="index.html">Home</a></li>
+            <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+            <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+            <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+            <li class="hover:underline"><a href="training.html">Training</a></li>
+            <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+        </ul>
+    <span id="span" class=" block bg-slate-50 text-3xl font-semibold text-center absolute top-72 sm:left-28  lg:left-60 xl:left-80 pl-6 pr-10 py-5 rounded-r-full ">Bulding The Next Generation of Legends</span>
+    </div>
+
+    <!-- code for why our gymkhana  -->
+
+    <div class="bg-black text-white flex flex-col gap-y-14">
+        <span class="text-white text-4xl text-center pt-16 flex justify-center">Why Our GymKhana?</span>
+        <div class="p-4 grid md:grid-cols-2 lg:grid-cols-3 border-separate ">
+            <div class="flex flex-col p-6 items-center gap-4 border-4 border-orange-600">
+                <p class="bg-white text-black w-28 h-28 rounded-full text-center flex items-center justify-center  text-[25px] font-bold border-4 border-orange-500"> <i>01</i></p>
+                <p class="text-center text-[19px] font-bold mt-8">Legacy</p>
+                <p class="text-center text-balance text-[16px] font-sans mt-4 pb-6" >Over the last 46 years, our iconic gym brand has set the standard for all others to follow. Legends have been made here since 1976. Now it's your turn.</p>
+            </div>
+            <div class="flex flex-col p-6 items-center gap-4 border-4 border-orange-600">
+                <p class="bg-white text-black w-28 h-28 rounded-full text-center flex items-center justify-center   text-[25px] font-bold border-4 border-orange-500"><i>02</i></p>
+                <p class="text-center text-[19px] font-bold mt-8">Enviroment</p>
+                <p class="text-center text-balance text-[16px] font-sans mt-6 pb-6" >We provide a safe, secure and comfortable environment to train in no matter what your experience or fitness level is. We boast a strong community of like-minded people supporting and encouraging one another to achieve legendary greatness.</p>
+            </div>
+            <div class="flex flex-col p-6 items-center gap-4 border-4 border-orange-600">
+                <p class="bg-white text-black w-28 h-28 rounded-full text-center flex items-center justify-center   text-[25px] font-bold border-4 border-orange-500"><i>03</i></p>
+                <p class="text-center text-[19px] font-bold mt-8">Results</p>
+                <p class="text-center text-balance text-[16px] font-sans mt-4 pb-6" >If you're serious about achieving a goal- no matter what that is- then we are your gym. From the best equipment, technology and programs to the best fitness professionals around, we are serious about getting you results.</p>
+            </div>
+            <div class="flex flex-col p-6 items-center gap-4 border-4 border-orange-600 border-r-4 ">
+                <p class="bg-white text-black w-28 h-28 rounded-full text-center flex items-center justify-center   text-[25px] font-bold border-4 border-orange-500"><i>04</i></p>
+                <p class="text-center text-[19px] font-bold mt-8">Experience</p>
+                <p class="text-center text-balance text-[16px] font-sans mt-4 pb-6" >Remarkable customer service, a safe, clean, comfortable environment and the best training floor around await you at your local World Gym.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- code for find a gym near to you  -->
+
+    <div class="bg-white py-12 px-8">
+        <h2 class="text-black text-center pb-8 text-5xl font-bold font-serif">World's Gymkhana</h2>
+        <div class="bg-transparent grid lg:grid-cols-2 gap-6">
+            <div class="bg-amber-600  hover:brightness-90 flex flex-col justify-between items-center py-6">
+                <p class="text-6xl font-semibold font-mono text-center">Find  A</p>
+                <p class="text-8xl font-extrabold font-serif text-center leading-snug">Best Gym Near to You <br></p>
+                <input class="text-center font-bold p-3" type="number" name="zip" id="zipcode" placeholder="Zip Code"><br>
+                <button class="bg-red-700 w-36 h-10 text-center font-semibold hover:bg-blue-700 hover:border-2 hover:text-white border-red-600 rounded-xl" type="submit">Search</button>
+            </div>
+            <div class="bg-transparent  flex flex-col gap-4 justify-between">
+                <div class="hover:opacity-45 cursor-pointer transition-all">
+                    <img src="https://i0.wp.com/goldsgym.in/wp-content/uploads/2023/12/compress-strong-man-training-gym-min-scaled.jpg?resize=1536%2C1024&ssl=1" alt="loading image.....">
+
+                </div>
+                <div class="hover:opacity-45  cursor-pointer  ">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg?crop=1.00xw:0.671xh;0,0.235xh&resize=1200:*" alt="loading image....">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- code for serious gym for sierious workouts  -->
+
+    <div class="bg-white grid lg:grid-cols-2 py-12 px-8 gap-7 " data-aos="fade-up">
+        <div class="bg-neutral-800" data-aos="slide-right" data-aos-delay="100" data-aos-duration="12000">
+            <p class="text-center text-3xl font-extrabold pt-8 font-sans">A SERIOUS GYM FOR SERIOUS WORKOUTS</p><br>
+            <p class="text-left text-4xl font-semibold px-6">Over 46 Years of Building Strength</p>
+            <br><br>
+            <p class="text-center text-xl px-7 pb-4 font-serif">In the early 1960's, one man set out on a mission to change the world by improving people's lives through fitness- and that he did. What started out as a small, single location in Los Angeles, California, has exploded to become an iconic, globally recognized gym brand that has fueled the modern fitness industry for decades. During this time, World Gym has produced some of the most legendary and iconic bodybuilders; has shaped and sculpted the Hollywood elite; has inspired millions of workout enthusiasts to lead an active lifestyle and transform their bodies; and it has welcomed all who were serious about improving their health and fitness. 
+             </p>
+
+        </div>
+        <div class="bg-red-600 hover:animate-pulse" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="120000" data-aos="fade">
+            <img class="h-full" src="https://www.omnigel.com/blogs/wp-content/uploads/2021/01/749969473.png" alt="loading image....">
+
+        </div>
+    </div>
+
+    <!-- code for stay informed and get fit section  -->
+
+    <div class="bg-black py-20 px-12 md:px-16 grid items-center gap-12" >
+        <div class="leading-10 flex flex-col gap-8 justify-between">
+            <p class="text-center text-white text-3xl font-bold font-serif">STAY INFORMED & GET FIT</p>
+            <p class="text-center text-white text-xl font-sans font-medium">Get the latest World Gym news, fitness tips, & exclusive offers delivered straight to your inbox.</p>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+            
+            <input class=" w-full text-center font-bold border-b-4 border-orange-400 rounded-lg py-3"required type="text" name="fname" id="fnmae" placeholder="First Name">
+            
+            
+            <input class="w-full text-center font-bold border-b-4 border-green-500 rounded-lg py-3" required type="text" name="lname" id="lname" placeholder="Last Name">
+            
+            
+            <input class="w-full text-center font-black border-b-4 border-pink-700 rounded-lg py-3" required type="email" name="email" id="email" placeholder="Email Address" >
+            
+            <input class="w-full h-12 bg-red-500 rounded-xl text-center text-white font-semibold hover:bg-opacity-65 hover:underline hover:outline-double outline-4 outline-amber-500" type="submit" value="SUBMIT">
+        </div>
+        <p class="text-center text-white font-serif">By clicking SUBMIT below, you. agree to the <a class="underline text-indigo-700" href=""> Privacy Policy </a> and authorize World Gym International, our affiliates, as well as our marketing and/or service providers to send you non-emergency, automated text messages at the number you entered above. Consent is not a condition of purchase. Reply STOP to opt-out of text messaging. Standard rates may apply.</p>
+        <p class="text-2xl text-white font-semibold p-6 text-center">FOLLOW US ON SOCIAL MEDIA FOR THE LATEST GYMNATION NEWS, UPDATES AND HILARIOUS GYM VIDEOS!</p>
+        <div class="text-white cursor-pointer text-3xl flex justify-center items gap-8">
+            <a href="https://www.facebook.com/276115732252325" target="_blank"><i class="fa-brands fa-facebook bg-black hover:text-yellow-400"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin bg-black hover:text-yellow-400"></i></a>
+            <a href="https://x.com/Waleed___S?t=PFLDwuxmnVNAcUvqRrowAQ&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter bg-black hover:text-yellow-400"></i></a>
+            <a href="https://waleed-s-portfolio.netlify.app" target="_blank"><i class="fa-solid fa-link bg-black hover:text-yellow-400"></i></a>
+        </div>
+    </div>
+    
+    <!-- code for footer  -->
+    <div class="bg-gray-900 grid md:grid  lg:gap-0 lg:flex justify-between items-center pb-13 pt-4 px-8">
+        <div class="px-3 grid grid-cols-2 gap-6 py-6 md:py-0 md:pb-0 md:gap-0 items-center md:block">
+
+            <div class="text-white text-center text-sm">&commat;2024 All Rights Reserved</div>
+            <div>
+                <ul class="flex gap-4 justify-center items-center text-white">
+                    <span class="text-white"> |</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Terms & conditions</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Site Map</a></li><span class="text-white">|</span>
+                    <li><a class="text-sm underline hover:text-blue-700" href="">Privacy Policy</a></li><span class="text-white">|</span>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-white p-4 text-base hidden md:block">
+            <p class="">Every World Gym is independently owned and operated.</p>
+            <p><a class="underline text-white hover:text-blue-700" href="">Click here</a> to learn more about becoming a World Gym owner.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        let num=1
+        document.getElementById("navToggle").addEventListener("click",()=>{
+            num+=1;
+            if(num%2==0){
+               let span=document.getElementById("span").classList.add("hidden")
+               let span2=document.getElementById("span").classList.remove("block")
+
+               let mobilenavLinks= document.getElementById("mobilenavLinks").classList.toggle("hidden");
+            }
+            else if(num%2!=0){
+               let mobilenavLinks= document.getElementById("mobilenavLinks").classList.toggle("hidden");
+               let span1=document.getElementById("span").classList.remove("hidden")
+               let span3=document.getElementById("span").classList.add("block")
+    
+           }
+            
+        })
+    </script>
+<!-- js for animations  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

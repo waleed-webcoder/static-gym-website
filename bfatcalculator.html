@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Body Fat Calculator</title>
+</head>
+<body class="bg-fuchsia-600">
+    <nav class="bg-transparent p-4 flex align-middle justify-around h-20 items-center">
+        <span class="text-orange-500 text-xl">GymKhana</span>          
+        <ul id="navLinks" class="hidden lg:flex justify-center items-center gap-12 text-white text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Body FAT-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="">Training</a></li>
+        <li class="hover:underline"><a href="">Contact us</a></li>
+        </ul>
+        <button id="navToggle" class="text-white lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- code for mobile menu of navlinks  -->
+
+    <ul id="mobilenavLinks" class=" hidden sm:flex flex-col bg-transparent backdrop-blur-md justify-center items-center gap-12 text-slate-800 font-semibold text-lg font-sans">
+        <li class="hover:underline"><a href="index.html">Home</a></li>
+        <li class="hover:underline"><a href="blog.html">Blogs</a></li>
+        <li class="hover:underline"><a href="fitnesscalcultor.html">Fitness-Calcultor</a></li>
+        <li class="hover:underline"><a href="gallery.html">Gallery</a></li>
+        <li class="hover:underline"><a href="training.html">Training</a></li>
+        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
+    </ul>
+
+    <p class="bg-blue-950 flex justify-center items-center h-52 text-white text-4xl font-serif font-bold tracking-[0.40em] p-8">FITNESS CALCULATORS</p>
+
+<script>
+    let num=0
+    document.getElementById("navToggle").addEventListener("click",()=>{
+        num+=1;
+       let mobilenavLinks= document.getElementById("mobilenavLinks").classList.toggle("hidden");
+       let span=document.getElementById("span").classList.add("hidden")
+        // if(mobilenavLinks.classList=="hidden"){
+        //     document.getElementById("span").classList.add("block")
+        // }
+        // else{
+        //     document.getElementById("span").classList.add("hidden")
+        // }
+    })
+</script>
+</body>
+</html>
